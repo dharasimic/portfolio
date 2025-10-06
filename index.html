@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dhara Simic - Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="top-nav">
+    <div class="nav-container">
+      <div class="nav-links">
+        <a href="#sobre" data-i18n="about">Sobre mim</a>
+        <a href="#experiencias" data-i18n="experience">Experiências</a>
+        <a href="#curiosidades" data-i18n="curiosities">Curiosidades</a>
+        <a href="#academica" data-i18n="academic">Vida Acadêmica</a>
+        <a href="#contato" data-i18n="contact">Contatos</a>
+      </div>
+      <div class="controls">
+        <div class="language-selector">
+          <button id="language-toggle" class="language-button">
+            <img src="images/language-icon.png" alt="Language" class="language-icon">
+            <span id="current-language">PT</span>
+            <span class="dropdown-arrow">▼</span>
+          </button>
+          <div id="language-dropdown" class="language-dropdown">
+            <div class="language-option" data-lang="pt-br">
+              <span class="flag">🇧🇷</span>
+              <span>Português</span>
+            </div>
+            <div class="language-option" data-lang="en">
+              <span class="flag">🇺🇸</span>
+              <span>English</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1 class="hero-name">
+          <span class="first-name">Dhara</span>
+          <span class="last-name">Simic</span>
+        </h1>
+        <p class="hero-role" data-i18n="qa-engineer">ANALISTA DE QUALIDADE</p>
+      </div>
+      <div class="hero-image">
+        <img src="images/hero-photo.jpeg" alt="Dhara Simic" class="hero-photo">
+      </div>
+    </div>
+  </section>
+  <main class="content">
+    <section id="sobre" class="section">
+      <div class="section-container">
+        <h2 data-i18n="about">SOBRE MIM</h2>
+        <div class="section-content">
+          <div class="section-text">
+            <p data-i18n="about-text">Sou uma pessoa curiosa por natureza, gosto de entender como as coisas funcionam, de aprender algo novo todos os dias e de transformar pequenas descobertas em algo útil. Tenho um lado bem analítico, mas também criativo: adoro resolver problemas, pensar em soluções diferentes e ver ideias ganharem forma.</p>
+            <p data-i18n="about-text-2">Nos momentos livres, gosto de jogar videogame, ler, estar perto da natureza e participar das atividades do movimento escoteiro, que me ensinou muito sobre empatia, liderança e serviço ao próximo.</p>
+            <p data-i18n="about-text-3">Sou movida por desafios, por conexões genuínas e pela vontade constante de crescer como profissional, mas principalmente como pessoa.</p>
+          </div>
+          <div class="section-image">
+            <img src="images/about-photo.jpeg" alt="Dhara Simic" data-i18n-alt="about-photo-alt">
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section id="experiencias" class="section">
+      <div class="section-container">
+        <h2 data-i18n="experience">EXPERIÊNCIAS PROFISSIONAIS</h2>
+        <div class="timeline">
+          <!-- Timeline Item 1 -->
+          <div class="timeline-item">
+            <div class="timeline-date">
+              <span data-i18n="timeline-date-1">Fevereiro 2025</span>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-text">
+                <h3 data-i18n="timeline-title-1">Início na Consultoria ModalGR</h3>
+                <p data-i18n="timeline-desc-1">Iniciei na consultoria ModalGR (atual Mosten) através do processo de formação como QA estagiária, dando meus primeiros passos na área de Quality Assurance.</p>
+              </div>
+              <div class="timeline-image">
+                <img src="images/modalgr-photo.jpeg" alt="ModalGR/Mosten" data-i18n-alt="modalgr-photo-alt">
+              </div>
+            </div>
+          </div>
+          
+          <!-- Timeline Item 2 -->
+          <div class="timeline-item">
+            <div class="timeline-date">
+              <span data-i18n="timeline-date-2">Abril 2025</span>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-text">
+                <h3 data-i18n="timeline-title-2">Efetivação QA Jr</h3>
+                <p data-i18n="timeline-desc-2">Fui efetivada em tempo recorde na empresa, me tornando QA Jr e demonstrando meu comprometimento e capacidade de aprendizado na área.</p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Timeline Item 3 -->
+          <div class="timeline-item">
+            <div class="timeline-date">
+              <span data-i18n="timeline-date-3">Atualmente</span>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-text">
+                <h3 data-i18n="timeline-title-3">QA Jr na Mosten</h3>
+                <p data-i18n="timeline-desc-3">Sigo como QA Jr na empresa Mosten, executando testes manuais e testes automatizados via Cypress.. Utilizo o Azure DevOps para organizar tasks e manter uma pipeline de testes automatizados que executa a cada alteração em produção, mantendo um fluxo de testes contínuos e evitando erros humanos.</p>
+              </div>
+              <div class="timeline-image">
+                <img src="images/placeholder-photo.png" alt="Trabalho Atual" data-i18n-alt="current-work-photo-alt">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section id="curiosidades" class="section">
+      <div class="section-container">
+        <h2 data-i18n="curiosities">CURIOSIDADES</h2>
+        <div class="section-content">
+          <div class="section-text">
+            <p data-i18n="curiosities-text">Sou escoteira desde 2018 e cresci dentro do movimento, que me ensinou sobre trabalho em equipe, liderança e cuidado com as pessoas e o mundo. Participo de ações de limpeza, trilhas e experiências que me lembram que conhecimento de vida é tão importante quanto o técnico.</p>
+            <p data-i18n="curiosities-text-2">Fora do uniforme, sou curiosa por natureza: adoro ler, montar quebra-cabeças enormes e ouvir música. Shows e festivais me encantam pela energia única que só a música ao vivo proporciona.</p>
+            <p data-i18n="curiosities-text-3">Essas paixões refletem quem eu sou: alguém que gosta de aprender, se conectar e explorar o mundo.</p>
+          </div>
+          <div class="section-image">
+            <img src="images/curiosities-photo.jpeg" alt="Atividades de Voluntariado" data-i18n-alt="curiosities-photo-alt">
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section id="academica" class="section">
+      <div class="section-container">
+        <h2 data-i18n="academic">VIDA ACADÊMICA</h2>
+        <div class="section-text-only">
+          <p data-i18n="academic-text">Atualmente curso Análise e Desenvolvimento de Sistemas na FATEC Rubens Lara, onde venho construindo minha base em tecnologia e explorando diferentes áreas que me despertam interesse.</p>
+          <p data-i18n="academic-text-2">Apesar de a faculdade ser apenas uma parte do meu caminho, sempre busco ir além do conteúdo das aulas. Tenho aprendido muito por conta própria, fazendo cursos e projetos paralelos (disponíveis no meu GitHub), e gosto de transformar esses aprendizados em experiências práticas.</p>
+          <p data-i18n="academic-text-3">Pra mim, estudar é mais sobre curiosidade e evolução constante do que sobre títulos, e é isso que guia minha jornada acadêmica até aqui.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <section id="contato" class="contact-section">
+    <div class="contact-container">
+      <h2 data-i18n="contact">Contatos</h2>
+      <div class="contact-grid">
+        <a href="mailto:dharagitass@gmail.com" class="contact-item contact-item-link">
+          <div class="contact-icon">
+            <img src="images/email-icon.png" alt="Email" class="contact-icon-img">
+          </div>
+          <div class="contact-info">
+            <span class="contact-label" data-i18n="email">Email</span>
+            <span class="contact-link">dharagitass@gmail.com</span>
+          </div>
+        </a>
+        
+        <a href="https://github.com/dharasimic" target="_blank" class="contact-item contact-item-link">
+          <div class="contact-icon">
+            <img src="images/github-icon.png" alt="GitHub" class="contact-icon-img">
+          </div>
+          <div class="contact-info">
+            <span class="contact-label" data-i18n="github">GitHub</span>
+            <span class="contact-link">dharasimic</span>
+          </div>
+        </a>
+        
+        <a href="https://www.linkedin.com/in/dhara-simic-543718291" target="_blank" class="contact-item contact-item-link">
+          <div class="contact-icon">
+            <img src="images/linkedin-icon.png" alt="LinkedIn" class="contact-icon-img">
+          </div>
+          <div class="contact-info">
+            <span class="contact-label" data-i18n="linkedin">LinkedIn</span>
+            <span class="contact-link">Dhara Simic</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-container">
+      <p>&copy; 2025 Dhara Simic</p>
+    </div>
+  </footer>
+  
+  <script src="script.js"></script>
+</body>
+</html>
