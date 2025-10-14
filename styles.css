@@ -754,17 +754,6 @@ body {
   margin: 0 auto;
 }
 
-/* Timeline item 3 (Atualmente) sem imagem - centralizado */
-.timeline-item:nth-child(3) .timeline-content {
-  grid-template-columns: 1fr;
-  justify-content: center;
-}
-
-.timeline-item:nth-child(3) .timeline-text {
-  max-width: 500px;
-  margin: 0 auto;
-}
-
 /* Skills Section */
 .skills-grid {
   display: grid;
