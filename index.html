@@ -14,11 +14,13 @@
       <div class="nav-links">
         <a href="#sobre" data-i18n="about">Sobre mim</a>
         <a href="#experiencias" data-i18n="experience">Experiências</a>
+        <a href="#habilidades" data-i18n="skills">Habilidades</a>
         <a href="#curiosidades" data-i18n="curiosities">Curiosidades</a>
         <a href="#academica" data-i18n="academic">Vida Acadêmica</a>
         <a href="#contato" data-i18n="contact">Contatos</a>
       </div>
       <div class="controls">
+        <button id="dark-mode-toggle" class="dark-mode-btn">🌙</button>
         <div class="language-selector">
           <button id="language-toggle" class="language-button">
             <img src="images/language-icon.png" alt="Language" class="language-icon">
@@ -112,11 +114,118 @@
             <div class="timeline-content">
               <div class="timeline-text">
                 <h3 data-i18n="timeline-title-3">QA Jr na Mosten</h3>
-                <p data-i18n="timeline-desc-3">Sigo como QA Jr na empresa Mosten, executando testes manuais e testes automatizados via Cypress.. Utilizo o Azure DevOps para organizar tasks e manter uma pipeline de testes automatizados que executa a cada alteração em produção, mantendo um fluxo de testes contínuos e evitando erros humanos.</p>
+                <p data-i18n="timeline-desc-3">Sigo como QA Jr na empresa Mosten, executando testes manuais e testes automatizados via Cypress. Utilizo o Azure DevOps para organizar tasks e manter uma pipeline de testes automatizados que executa a cada alteração em produção, mantendo um fluxo de testes contínuos e evitando erros humanos.</p>
               </div>
-              <div class="timeline-image">
-                <img src="images/placeholder-photo.png" alt="Trabalho Atual" data-i18n-alt="current-work-photo-alt">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section id="habilidades" class="section">
+      <div class="section-container">
+        <h2 data-i18n="skills">HABILIDADES TÉCNICAS</h2>
+        <div class="skills-grid">
+          <!-- Automação e Testes -->
+          <div class="skill-category">
+            <div class="skill-icon">💻</div>
+            <h3 data-i18n="skills-automation-title">Automação e Testes</h3>
+            <div class="skill-items">
+              <div class="skill-item">
+                <span class="skill-name">Cypress (TypeScript)</span>
+                <p data-i18n="skills-cypress-desc">Testes E2E integrados ao CI/CD</p>
               </div>
+              <div class="skill-item">
+                <span class="skill-name">Azure DevOps</span>
+                <p data-i18n="skills-azure-desc">Pipelines de automação e reports de bugs</p>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name" data-i18n="skills-manual-tests">Testes manuais e exploratórios</span>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name" data-i18n="skills-test-cases">Caderno e roteiro de testes</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Integração Contínua -->
+          <div class="skill-category">
+            <div class="skill-icon">⚙️</div>
+            <h3 data-i18n="skills-ci-title">Integração Contínua e Versionamento</h3>
+            <div class="skill-items">
+              <div class="skill-item">
+                <span class="skill-name">CI/CD</span>
+                <p data-i18n="skills-cicd-desc">Azure DevOps pipelines</p>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">Git / GitHub</span>
+                <p data-i18n="skills-git-desc">Versionamento de automação</p>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name" data-i18n="skills-auto-exec">Execução automatizada em produção</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Qualidade e Documentação -->
+          <div class="skill-category">
+            <div class="skill-icon">📋</div>
+            <h3 data-i18n="skills-quality-title">Qualidade e Documentação</h3>
+            <div class="skill-items">
+              <div class="skill-item">
+                <span class="skill-name" data-i18n="skills-requirements">Levantamento de requisitos</span>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name" data-i18n="skills-documentation">Documentação técnica e funcional</span>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name" data-i18n="skills-bug-management">Gestão de bugs e métricas de qualidade</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Workflow Section -->
+        <div class="workflow-section">
+          <h3 data-i18n="workflow-title">Meu Workflow de QA Automatizado</h3>
+          <div class="workflow-steps">
+            <div class="workflow-step workflow-step-clickable" data-modal="requirementsModal">
+              <div class="step-number">1</div>
+              <div class="step-content">
+                <h4 data-i18n="workflow-step-1-title">Análise de Requisitos</h4>
+                <p data-i18n="workflow-step-1-desc">Análise dos requisitos e definição de cenários de teste</p>
+              </div>
+              <div class="step-arrow">→</div>
+            </div>
+            <div class="workflow-step workflow-step-clickable" data-modal="developmentModal">
+              <div class="step-number">2</div>
+              <div class="step-content">
+                <h4 data-i18n="workflow-step-2-title">Desenvolvimento de Testes</h4>
+                <p data-i18n="workflow-step-2-desc">Escrita dos testes E2E com Cypress (TypeScript)</p>
+              </div>
+              <div class="step-arrow">→</div>
+            </div>
+            <div class="workflow-step">
+              <div class="step-number">3</div>
+              <div class="step-content">
+                <h4 data-i18n="workflow-step-3-title">Integração CI/CD</h4>
+                <p data-i18n="workflow-step-3-desc">Integração com pipeline do Azure DevOps</p>
+              </div>
+            </div>
+            <div class="workflow-step">
+              <div class="step-number">4</div>
+              <div class="step-content">
+                <h4 data-i18n="workflow-step-4-title">Execução Automática</h4>
+                <p data-i18n="workflow-step-4-desc">Execução automática após deploy</p>
+              </div>
+            </div>
+            <div class="workflow-step workflow-step-clickable" data-modal="reportsModal">
+              <div class="step-number">5</div>
+              <div class="step-content">
+                <h4 data-i18n="workflow-step-5-title">Relatórios e Documentação</h4>
+                <p data-i18n="workflow-step-5-desc">Report de resultados e documentação no Azure DevOps</p>
+              </div>
+              <div class="step-arrow">→</div>
             </div>
           </div>
         </div>
@@ -128,9 +237,8 @@
         <h2 data-i18n="curiosities">CURIOSIDADES</h2>
         <div class="section-content">
           <div class="section-text">
-            <p data-i18n="curiosities-text">Sou escoteira desde 2018 e cresci dentro do movimento, que me ensinou sobre trabalho em equipe, liderança e cuidado com as pessoas e o mundo. Participo de ações de limpeza, trilhas e experiências que me lembram que conhecimento de vida é tão importante quanto o técnico.</p>
-            <p data-i18n="curiosities-text-2">Fora do uniforme, sou curiosa por natureza: adoro ler, montar quebra-cabeças enormes e ouvir música. Shows e festivais me encantam pela energia única que só a música ao vivo proporciona.</p>
-            <p data-i18n="curiosities-text-3">Essas paixões refletem quem eu sou: alguém que gosta de aprender, se conectar e explorar o mundo.</p>
+            <p data-i18n="curiosities-text">Sou escoteira desde 2018 e cresci dentro do movimento, que me ensinou sobre trabalho em equipe, liderança e cuidado com as pessoas e com o mundo. Participo de ações de limpeza, trilhas e experiências que me lembram que conhecimento de vida é tão importante quanto o técnico.</p>
+            <p data-i18n="curiosities-text-2">Fora do uniforme, minha curiosidade me levou ao mundo da tecnologia. Antes de entrar na área de QA, atuei por seis meses como estagiária de Help Desk em uma empresa de TI. Foi uma fase intensa e desafiadora, que me ensinou a lidar com situações sob pressão, a conhecer um produto de ponta a ponta e a valorizar a comunicação clara com o usuário. Foi ali que descobri meu interesse em garantir qualidade, não só técnica, mas também na experiência das pessoas com o software.</p>
           </div>
           <div class="section-image">
             <img src="images/curiosities-photo.jpeg" alt="Atividades de Voluntariado" data-i18n-alt="curiosities-photo-alt">
@@ -193,6 +301,44 @@
       <p>&copy; 2025 Dhara Simic</p>
     </div>
   </footer>
+
+  <!-- Modals para demonstrar habilidades -->
+  
+  <!-- Modal Análise de Requisitos -->
+  <div id="requirementsModal" class="modal">
+    <div class="modal-content">
+      <h3 data-i18n="modal-requirements-title">Análise de Requisitos <span class="close">&times;</span></h3>
+      <div class="modal-body">
+        <div id="requirementsModalContent">
+          <!-- Conteúdo será inserido dinamicamente pelo JavaScript -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Desenvolvimento -->
+  <div id="developmentModal" class="modal">
+    <div class="modal-content">
+      <h3 data-i18n="modal-development-title">Desenvolvimento de Testes <span class="close">&times;</span></h3>
+      <div class="modal-body">
+        <div id="developmentModalContent">
+          <!-- Conteúdo será inserido dinamicamente pelo JavaScript -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Relatórios -->
+  <div id="reportsModal" class="modal">
+    <div class="modal-content">
+      <h3 data-i18n="modal-reports-title">Relatórios e Documentação <span class="close">&times;</span></h3>
+      <div class="modal-body">
+        <div id="reportsModalContent">
+          <!-- Conteúdo será inserido dinamicamente pelo JavaScript -->
+        </div>
+      </div>
+    </div>
+  </div>
   
   <script src="script.js"></script>
 </body>
